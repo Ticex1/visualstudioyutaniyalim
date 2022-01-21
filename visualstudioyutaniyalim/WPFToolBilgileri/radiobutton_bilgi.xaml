@@ -1,0 +1,49 @@
+<UserControl x:Class="visualstudioyutaniyalim.WPFToolBilgileri.radiobutton_bilgi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolBilgileri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFD6D6D6" Margin="0,0,-390,-194">
+        <Rectangle Fill="#FFFF4301" HorizontalAlignment="Left" Height="150" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="150" Margin="10,8,0,0">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="147" Margin="11,9,0,0" TextWrapping="Wrap" Text="RadioButton iki yada daha fazla seçenek içinde bir seçim yapmayı sağlayan kontroldür. Örneğin Cinsiyet sorulduğunda iki seçenekten birinin seçilmesi gerekir. Bu tarz durumlarda RadioButton kullanılmalıdır." VerticalAlignment="Top" Width="147" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White" SelectionBrush="#FFFF4301"/>
+        <Rectangle Fill="#FFFA7D09" HorizontalAlignment="Left" Height="441" Margin="319,6,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="175">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="435" Margin="326,6,0,0" TextWrapping="Wrap" Text="TextImageRelation: RadioButton üzerindeki resim ile buton yazısının nasıl yerleştirileceğini belirlemimizi sağlar.  Overlay: Resim altta resmin üzerinde ve ortasında yazı olur.  &#xA;&#xA;ImageAboveText: Resim üstte yazı altta olur.  &#xA;&#xA;TextAboveImage: Yazı üstte resim altta olur.  &#xA;&#xA;ImageBeforeText: Solda resim sağda yazı olur.  &#xA;&#xA;TextBeforeImage: Solda yazı sağda resim olur.  &#xA;&#xA;Enabled: RadioButton nesnesinin aktif yada pasif olmasını sağlar. True ise RadioButton aktifdir.  &#xA;&#xA;TabIndex: Form içindeki nesnelere tab tuşu ile erişimde kaçıncı sırada olmasını istiyorsak buraya o sayı yazılır. Dikkat edilmesi gereken numaralandırma sıfırdan başlamaktadır.&#xA;&#xA;Visible: RadioButtonun görünüp görünmemesinin ayarlandığı yerdir. True ise RadioButton görünür.  &#xA;&#xA;Name: RadioButtonun tanımlayıcı adını değiştirmemizi sağlar. Bu başlık değildir, RadioButtonun kaynak adıdır, değişken adıdır. İşlem yaparken kullanılacak adıdır. Eğer programlamada yeniyseniz bunu değiştirmemenizi tavsiye ediyorum.&#xA;&#xA;Locked: RadioButton nesnesini kilitlememizi sağlar.  Location: RadioButtonun form üzerindeki konumunun yazılacağı alandır. x ekseni; y ekseni şeklinde değer yazılır.  MaximumSize: RadioButtonun boyutlarının alabileceği en büyük değerlerin yazıldığı alandır. Genişlik; Yükseklik şeklinde değer yazılır." VerticalAlignment="Top" Width="171" TextChanged="TextBox_TextChanged" Background="{x:Null}" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="White" SelectionBrush="#FFFA7D09"/>
+        <Rectangle Fill="#FF4A3F35" HorizontalAlignment="Left" Height="439" Margin="499,8,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="230">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="429" Margin="504,6,0,0" TextWrapping="Wrap" Text="RadioButton' ait bazı özellikler:   BackColor: RadioButtonun arkaplan rengini değiştirmemizi sağlar.  &#xA;&#xA;BackgroundImage: RadioButtonun arkaplanına resim yerleştirmemizi sağlar.  &#xA;&#xA;BackgroundImageLayout: RadioButtonun arkaplan resminin boyutlandırılmasını sağlar. Bu özellik içindeki parametreleri tanıyalım.  &#xA;&#xA;None: Resmin boyutunda değişiklik olmadan resmi butonun sol-üst köşesine yerleştirir.  Tile: Resmin boyutunda değişiklik olmaz ama resmi sol-üst köşeden başlayarak butonun boş kalan arkaplanına resmi çoğaltarak doldurur. &#xA;&#xA;Center: Resmi butonun ortasına yerleştirir.  Stretch: Resim büyükse küçülterek, küçükse büyülterek resmi butona sığdırır. Resmi butonun ebatlarına getirerek taşmayacak şekilde yerleştirir.&#xA;&#xA;Zoom:Resim küçükse buton nesnesine sığacak şekilde büyüterek yerleştirir." VerticalAlignment="Top" Width="225" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White" SelectionBrush="#FF4A3F35"/>
+        <Rectangle Fill="#FF2F2519" HorizontalAlignment="Left" Height="439" Margin="734,8,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="205">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="418" Margin="735,9,0,0" TextWrapping="Wrap" Text="Checked: RadioButtonun seçili olup olmadığının belirtileceği yerdir. True ise RadioButton seçili olur. &#xA;&#xA;Cursor: RadioButton üzerine gelince farenin şeklini değiştirmemiz-&#xA;&#xA;FlatStyle: RadioButton nesnesinin çerçevesinin şeklini değiştirmemizi sağlar.&#xA;&#xA;Font: RadioButton etiket yazısının yazıtipini seçmemizi sağlar.  &#xA;&#xA;ForeColor: RadioButton etiket yazısının rengini değiştirmemizi sağlar.&#xA;&#xA;Image: RadioButtona resim yerleştirmemizi sağlar.  &#xA;&#xA;ImageAlign: Resmin RadioButton üzerinde hizalanmasını sağlar. Sol, orta, sağ,..  Text: RadioButtonun etiket yazısını değiştirmemizi sağlar. radioButton1, radioButton2,…  &#xA;&#xA;TextAlign: RadioButton üzerindeki yazının hizalanmasını sağlar. Left-sola hizalı, right-sağa hizalı ve center-ortalıdır." VerticalAlignment="Top" Width="205" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" CaretBrush="{x:Null}" SelectionBrush="#FF2F2519"/>
+        <Image Source="/WPFToolBilgileri/toolimage/radiobutton.png" HorizontalAlignment="Left" Height="224" Margin="10,169,0,0" VerticalAlignment="Top" Width="302"/>
+
+    </Grid>
+</UserControl>

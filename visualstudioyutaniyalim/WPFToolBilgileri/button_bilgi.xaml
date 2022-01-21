@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="visualstudioyutaniyalim.WPFToolBilgileri.button_bilgi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolBilgileri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFD6D6D6">
+        <Rectangle Fill="#FF5858F1" HorizontalAlignment="Left" Height="270" Margin="7,7,0,0" VerticalAlignment="Top" Width="315" RadiusY="9.5" RadiusX="9.5">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="232" Margin="12,23,0,0" TextWrapping="Wrap" Text="Buttonlar, her formda aynı işlevi gerçekleştirecek ve tekrar tekrar tekrar kullanabilecek çıkış ve çıkış düğmeleri gibi tekrar kullanılabilir bileşenlerdir. Butonlar son kullanıcıya oldukça açık bir yazılım navigasyonu sağlayacaktır. Butonların şekli benzersizdir ve kullanıcının butonun nerede olduğunu kolayca yargılayabileceği kendi görünüm özelliklerine sahiptir. Kısacası, butonlar kullanıcı ve uygulama arasında etkileşim oluşturmak için kullanılan kontrol cihazıdır. Bu kadar açıklamadan sonra buton kullanımına geçebiliriz.  Bütün Buttonlar .NET Framework sınıf kitaplığındaki C# Button sınıfı, Windows Forms Button denetimini gösterir. Button denetimi, bir Forma yerleştirilen ve tıklama olayını işlemek için kullanılan bir alt denetimdir." VerticalAlignment="Top" Width="313" Background="{x:Null}" FontFamily="Segoe UI Semibold" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FFFF6C18" HorizontalAlignment="Left" Height="123" Margin="331,8,0,0" VerticalAlignment="Top" Width="315" RadiusY="9.5" RadiusX="9.5">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="120" Margin="341,11,0,0" TextWrapping="Wrap" Text="C# Button Oluşturma Bir Button denetimi oluşturmak için, bir button denetimini Araç Kutusu'ndan Visual Studio'daki Form'a sürükleyip bırakmanız yeterlidir. Bir button'u Form'a sürükleyip bıraktıktan sonra, Button aşağıdaki şekle benzer görünecektir. Bir Button Form üzerine geldiğinde, etrafında hareket ettirebilir ve yeniden boyutlandırabilirsiniz." VerticalAlignment="Top" Width="295" Background="{x:Null}" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Segoe UI Semibold"/>
+        <Rectangle Fill="#FFFF1818" HorizontalAlignment="Left" Height="140" Margin="3,288,0,0" VerticalAlignment="Top" Width="315" RadiusY="9.5" RadiusX="9.5">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="135" Margin="12,290,0,0" TextWrapping="Wrap" Text="C# Button Özelliklerini Ayarlama Form üzerindeki bir Button denetimi yerleştirdikten sonra, bir sonraki adım button özelliklerini ayarlamaktır.  Bir button denetimi özelliklerini ayarlamanın en kolay yolu, Özellikler Penceresi'ni kullanmaktır. F4 tuşuna basarak Özellikler penceresini açabilir veya bir kontrolü sağ tıklayıp Özellikler menüsü öğesini seçebilirsiniz. Özellikler penceresi aşağıdaki şekle benziyor.  " VerticalAlignment="Top" Width="300" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White" FontFamily="Segoe UI Semibold"/>
+        <Image Source="/WPFToolBilgileri/toolimage/button.png" HorizontalAlignment="Left" Height="339" Margin="338,136,0,-25" VerticalAlignment="Top" Width="300"/>
+    </Grid>
+</UserControl>

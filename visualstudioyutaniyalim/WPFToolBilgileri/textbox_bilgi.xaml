@@ -1,0 +1,66 @@
+<UserControl x:Class="visualstudioyutaniyalim.WPFToolBilgileri.textbox_bilgi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolBilgileri"
+             mc:Ignorable="d" Height="646.261" Width="1621.496">
+    <Grid Background="#FFD6D6D6" Margin="0,0,0,1" HorizontalAlignment="Left" Width="1575">
+        <Rectangle Fill="#FFFC9918" HorizontalAlignment="Left" Height="185" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="180" Margin="0,1,0,0">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="160" Margin="10,10,0,0" TextWrapping="Wrap" Text="Bir textbox nesnesi, bir formdaki metni görüntülemek veya bir C# programı çalışırken kullanıcı girişi elde etmek için kullanılır. Bir textbox nesnesine, bir kullanıcı veri yazabilir veya panodan kontrolün içine yapıştırabilir." VerticalAlignment="Top" Width="170" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FFF14A16" HorizontalAlignment="Left" Height="250" Margin="0,190,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="180">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="240" Margin="9,192,0,0" TextWrapping="Wrap" Text="C# Dinamik TextBox Oluşturma Çalışma zamanında bir TextBox denetimi oluşturmak yalnızca bir TextBox sınıfı örneği oluşturma, özelliklerini ayarlama ve Form denetimlerine TextBox sınıfı ekleme işlemidir.  Dinamik bir TextBox oluşturmak için ilk adım bir TextBox sınıfı örneği oluşturmaktır. Aşağıdaki kod parçacığını bir TextBox denetim nesnesi oluşturur." VerticalAlignment="Top" Width="170" Background="{x:Null}" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FF35589A" HorizontalAlignment="Left" Height="183" Margin="185,1,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="415">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="150" Margin="195,10,0,0" TextWrapping="Wrap" Text="C# TextBox Oluşturma Tasarım zamanında Form tasarımcısı kullanarak veya çalışma zamanında koddaki TextBox sınıfını kullanarak (dinamik olarak da bilinir) bir TextBox denetimi oluşturabiliriz.  Tasarım zamanında bir TextBox denetimi oluşturmak için, bir TextBox denetimini Araç Kutusu'ndan Visual Studio'daki bir Form'a sürükleyip bırakmanız yeterlidir. Bir TextBox'ı Form üzerinde sürükleyip bıraktıktan sonra, TextBox aşağıdaki şekle benzer. Bir TextBox Formdayken, fareyi kullanarak taşıyabilir ve yeniden boyutlandırabilir ve özelliklerini ve olaylarını ayarlayabilirsiniz." VerticalAlignment="Top" Width="395" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FF9BA6BB" HorizontalAlignment="Left" Height="105" Margin="191,195,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="350">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="195,196,0,0" TextWrapping="Wrap" Text="// TextBox nesnesi Oluşturma TextBox textBox1= new TextBox();" VerticalAlignment="Top" Width="355" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Height="80" Margin="201,225,0,0" TextWrapping="Wrap" Text="Bir sonraki adımda, bir TextBox denetiminin özelliklerini ayarlayabilirsiniz. Aşağıdaki kod parçası, bir TextBox öğesinin arka plan rengini, ön plan rengini, Metin, Ad ve Yazı Tipi özelliklerini ayarlar." VerticalAlignment="Top" Width="354" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FF370665" HorizontalAlignment="Left" Height="122" Margin="191,310,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="350">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="90" Margin="195,325,0,0" TextWrapping="Wrap" Text="// yazı ve arkaplan rengini ayarlama ayrıca yazı türü ve isim gibi özellikeri de ayarlandı &#xA;textBox1.BackColor = Color.Azure; textBox1.ForeColor = Color.Firebrick; textBox1.Name = dinamikTxt; textBox1.Font = new Font(Georgia, 16);                   " VerticalAlignment="Top" Width="355" TextChanged="TextBox_TextChanged" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <Rectangle Fill="#FF6E41E4" HorizontalAlignment="Left" Height="237" Margin="550,195,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="252">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="196" Margin="557,202,0,0" TextWrapping="Wrap" Text="Bir TextBox denetimi özellikleriyle hazır olduğunda, bir sonraki adım TextBox denetimini forma eklemektir. Bunu yapmak için Form.Controls.Add yöntemini kullanıyoruz. Aşağıdaki kod parçası, geçerli Forma bir TextBox denetimi ekler.&#xA;&#xA;Controls.Add(dinamikTxt);&#xA;" VerticalAlignment="Top" Width="230" BorderBrush="{x:Null}" Background="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+        <Image Source="toolimage/textbox1.png" HorizontalAlignment="Left" Height="185" Margin="606,5,0,0" VerticalAlignment="Top" Width="193"/>
+    </Grid>
+</UserControl>

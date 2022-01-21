@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{692DFD94-3C83-4086-B0EA-7FE0CC1AC9D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>visualstudioyutaniyalim</RootNamespace>
+    <AssemblyName>visualstudioyutaniyalim</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Classlar\uc_cagir.cs" />
+    <Compile Include="WPFFormlar\ana_sayfa.xaml.cs">
+      <DependentUpon>ana_sayfa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFFormlar\hakkımızda.xaml.cs">
+      <DependentUpon>hakkımızda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFFormlar\tool_bilgileri.xaml.cs">
+      <DependentUpon>tool_bilgileri.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFFormlar\tool_eslestirme.xaml.cs">
+      <DependentUpon>tool_eslestirme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFFormlar\tool_örnekleri.xaml.cs">
+      <DependentUpon>tool_örnekleri.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\button_bilgi.xaml.cs">
+      <DependentUpon>button_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\CheckBox_bilgi.xaml.cs">
+      <DependentUpon>CheckBox_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\combobox_bilgi.xaml.cs">
+      <DependentUpon>combobox_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\contextmenustrip_bilgi.xaml.cs">
+      <DependentUpon>contextmenustrip_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\label_bilgi.xaml.cs">
+      <DependentUpon>label_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\listbox_bilgi.xaml.cs">
+      <DependentUpon>listbox_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\picturebox_bilgi.xaml.cs">
+      <DependentUpon>picturebox_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\radiobutton_bilgi.xaml.cs">
+      <DependentUpon>radiobutton_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\richtextboxbilgi.xaml.cs">
+      <DependentUpon>richtextboxbilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolBilgileri\textbox_bilgi.xaml.cs">
+      <DependentUpon>textbox_bilgi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolÖrnekleri\örnek1.xaml.cs">
+      <DependentUpon>örnek1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolÖrnekleri\örnek2.xaml.cs">
+      <DependentUpon>örnek2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolÖrnekleri\örnek3.xaml.cs">
+      <DependentUpon>örnek3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolÖrnekleri\örnek4.xaml.cs">
+      <DependentUpon>örnek4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFToolÖrnekleri\örnek5.xaml.cs">
+      <DependentUpon>örnek5.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="WPFFormlar\ana_sayfa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFFormlar\hakkımızda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFFormlar\tool_bilgileri.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFFormlar\tool_eslestirme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFFormlar\tool_örnekleri.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\button_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\CheckBox_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\combobox_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\contextmenustrip_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\label_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\listbox_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\picturebox_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\radiobutton_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\richtextboxbilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolBilgileri\textbox_bilgi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolÖrnekleri\örnek1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolÖrnekleri\örnek2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolÖrnekleri\örnek3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolÖrnekleri\örnek4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFToolÖrnekleri\örnek5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\visual-studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\home-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\toolbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\eslestirme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\resimler\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\visualstudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\checkbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\checkbox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\textbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\listbox1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\contextmenu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image10.png" />
+    <Resource Include="WPFToolBilgileri\toolimage\Image9.png" />
+    <Resource Include="WPFToolBilgileri\toolimage\listbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\Image11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\contextmenu11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\radiobutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolBilgileri\toolimage\label.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPFToolÖrnekleri\image\kedi1.jpg" />
+    <Resource Include="WPFToolÖrnekleri\image\kedi2.jpg" />
+    <Resource Include="WPFToolÖrnekleri\image\kedi3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\icon\info.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

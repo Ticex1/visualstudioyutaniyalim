@@ -1,0 +1,22 @@
+<UserControl x:Class="visualstudioyutaniyalim.WPFToolÖrnekleri.örnek5"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolÖrnekleri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="948.598">
+    <Grid x:Name="icerik" Background="White" Margin="0,0,0,-116">
+        <Grid.ContextMenu>
+            <ContextMenu x:Name="contextMenu1">
+                <MenuItem Header="Kırmızı" Click="menuItem1_Click" x:Name="menuItem1" />
+                <MenuItem Header="Mavi" Click="menuItem2_Click" x:Name="menuItem2" />
+                <MenuItem Header="Yeşil" Click="menuItem3_Click" x:Name="menuItem3" />
+            </ContextMenu>
+        </Grid.ContextMenu>
+        <Label Content="Örnek 5 : Bu örneğimizde C# ta Fare sağ tuş menüsü nasıl kullanılır? onu göreceğiz. &#xA;Örneğimizde form üzerinde sağ tıkladığımızda&#xA;karşımıza renk seçenekleri gelecek ve arka planın hangi renkte olmasını istiyorsak o renge tıklayınca &#xA;renginin değişmesi sağlanacaktır.&#xA;&#xA;Lütfen sağ tıklayın ve renk seçin." HorizontalAlignment="Left" Margin="1,37,0,0" VerticalAlignment="Top" FontSize="18" Height="160"/>
+        <TextBox HorizontalAlignment="Left" Height="364" Margin="380,177,0,0" TextWrapping="Wrap" Text="public partial class Form1 : Form&#xD;&#xA;    {&#xD;&#xA;        public Form1()&#xD;&#xA;        {&#xD;&#xA;            InitializeComponent();&#xD;&#xA;        }&#xD;&#xA; &#xD;&#xA;        private void maviToolStripMenuItem_Click(object sender, EventArgs e)&#xD;&#xA;        {&#xD;&#xA;           this.BackColor = Color.Blue;&#xD;&#xA;        }&#xD;&#xA; &#xD;&#xA;        private void kırmızıToolStripMenuItem_Click(object sender, EventArgs e)&#xD;&#xA;        {&#xD;&#xA;            this.BackColor = Color.Red;&#xD;&#xA;        }&#xD;&#xA; &#xD;&#xA;        private void yesilToolStripMenuItem_Click(object sender, EventArgs e)&#xD;&#xA;        {&#xD;&#xA;            this.BackColor = Color.Green;&#xD;&#xA;        }&#xD;&#xA;    }" VerticalAlignment="Top" Width="512" IsEnabled="False" FontWeight="Bold"/>
+        <Label Content="Kodlar" HorizontalAlignment="Left" Margin="594,137,0,0" VerticalAlignment="Top" Width="73" FontSize="20" FontWeight="Bold"/>
+    </Grid>
+
+</UserControl>

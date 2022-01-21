@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="visualstudioyutaniyalim.WPFToolBilgileri.CheckBox_bilgi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolBilgileri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFD6D6D6">
+        <Rectangle Fill="#96CEB4" HorizontalAlignment="Left" Height="105" Margin="5,10,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="366">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="117" Margin="5,19,0,0" TextWrapping="Wrap" Text="Checkbox kullanıcıya seçenekler sunarak bunlardan birini, birkaçını ya da tamamını seçebilmesi istenen durumlar için kullanılır. Checked özelliği sayesinde seçili olup olmadığının kontrolünü yapabiliriz" VerticalAlignment="Top" Width="365" Background="{x:Null}" Foreground="#FF080404" BorderBrush="{x:Null}" CaretBrush="{x:Null}" FontSize="14"/>
+        <Rectangle Fill="#FFEEAD" HorizontalAlignment="Left" Height="314" Margin="2,126,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="373">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="360" Margin="6,130,0,-40" TextWrapping="Wrap" Text="CheckBox Özellikleri: &#xD;&#xA;BackColor:Checkboxun arkaplan rengini değiştirmemizi sağlar.  BackgroundImage: Checkboxun arkaplanına resim yerleştirmemizi sağlar.  &#xD;&#xA;&#xD;&#xA;BackgroundImageLayout: Checkboxun arkaplan resminin boyutlandırılmasını sağlar. Bu özellik içindeki parametreleri&#xD;&#xA;tanıyalım.&#xD;&#xA;   &#xD;&#xA;None:Resmin boyutunda değişiklik olmadan resmi nesnenin sol-üst köşesine yerleştirir. &#xD;&#xA;Tile:Resmin boyutunda değişiklik olmaz ama resmi sol-üst köşeden başlayarak nesnenin boş kalan arkaplanına resmi çoğaltarak doldurur. &#xD;&#xA;Center:Resmi nesnenin ortasına yerleştirir. &#xD;&#xA;Stretch: Resim büyükse küçülterek, küçükse büyülterek resmi nesneye sığdırır. Resmi nesnenin ebatlarına getirerek taşmayacak şekilde yerleştirir. &#xD;&#xA;Zoom:Resim küçükse nesneye sığacak şekilde büyüterek yerleştirir." VerticalAlignment="Top" Width="365" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="Black" FontFamily="Segoe UI Historic"/>
+        <Rectangle Fill="#FFD9534F" HorizontalAlignment="Left" Height="430" Margin="380,10,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="410">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="406" Margin="395,19,0,0" TextWrapping="Wrap" Text="Checked:Checkboxun seçili olup olmadığının belirtileceği yerdir. True ise checkbox seçili olur.&#xD;&#xA;&#xD;&#xA;Cursor:Checkbox üzerine gelince farenin şeklini değiştirmemizi sağlar. Ok, El simgesi, artı simgesi, vs…&#xD;&#xA;&#xD;&#xA;FlatStyle: Checkbox nesnesinin çerçevesinin şeklini değiştirmemizi sağlar.&#xD;&#xA;&#xD;&#xA;Font: Checkbox etiket yazısının yazıtipini seçmemizi sağlar.     &#xD;&#xA;&#xD;&#xA;ForeColor: Checkbox etiket yazısının rengini değiştirmemizi sağlar.&#xD;&#xA;&#xD;&#xA;Image:Checkboxa resim yerleştirmemizi sağlar. &#xD;&#xA;&#xD;&#xA;ImageAlign:Resmin Checkbox üzerinde hizalanmasını sağlar. Sol, orta, sağ,..&#xD;&#xA;&#xD;&#xA;Text:Checkboxun etiket  yazısını değiştirmemizi sağlar. checkBox1, checkBox2,…&#xD;&#xA;&#xD;&#xA;TextAlign: Checkbox üzerindeki yazının hizalanmasını sağlar. Left-sola hizalı, right-sağa hizalı ve center-ortalıdır.&#xD;&#xA;&#xD;&#xA;TextImageRelation:Checkbox üzerindeki resim ile buton yazısının nasıl yerleştirileceğini belirlemimizi sağlar.&#xD;&#xA;&#xD;&#xA;Overlay:Resim altta resmin üzerinde ve ortasında yazı olur.&#xD;&#xA;ImageAboveText:Resim üstte yazı altta olur.&#xD;&#xA;TextAboveImage:Yazı üstte resim altta olur.&#xD;&#xA;ImageBeforeText:Solda resim sağda yazı olur.&#xD;&#xA;TextBeforeImage:Solda yazı sağda resim olur.&#xD;&#xA;Enabled:Checkbox nesnesinin aktif yada pasif olmasını sağlar. True ise Checkbox aktifdir.&#xD;&#xA;&#xD;&#xA;TabIndex: Form içindeki nesnelere tab tuşu ile erişimde kaçıncı sırada olmasını istiyorsak buraya o sayı yazılır. Dikkat edilmesi gereken numaralandırma sıfırdan başlamaktadır.&#xD;&#xA;&#xD;&#xA;Visible:Checkboxun görünüp görünmemesinin ayarlandığı yerdir. True ise checkbox görünür.&#xD;&#xA;&#xD;&#xA;Name: Checkboxun tanımlayıcı adını değiştirmemizi sağlar. Bu başlık değildir, Checkboxun kaynak adıdır, değişken adıdır. İşlem yaparken kullanılacak adıdır. Eğer programlamada yeniyseniz bunu değiştirmemenizi tavsiye ediyorum.&#xD;&#xA;&#xD;&#xA;Locked: Checkbox nesnesini kilitlememizi sağlar. " VerticalAlignment="Top" Width="380" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="White"/>
+    </Grid>
+</UserControl>

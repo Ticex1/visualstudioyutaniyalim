@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="visualstudioyutaniyalim.WPFToolBilgileri.combobox_bilgi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolBilgileri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFD6D6D6">
+        <Rectangle Fill="#FFFEECE9" HorizontalAlignment="Left" Height="60" Margin="4,5,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="786">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="58" TextWrapping="Wrap" Text="Bir kontrolün içerisinde data görüntülemek, bu yolla kullanıcıya bilgi girişi yapabilmek amacıyla seçenek sağlamak için kullanılır. Kontrol aşağıya doğru açılır ve iki bölümden oluşur. Üst tarafı bir textbox kontrolü gibi düşünülebilir ve kullanıcının metin girmesini sağlar. Ikinci bölüm ise bir ListBox kontrolü gibi düşünülebilir. Kullanıcının seçebileceği öğelerin (item) listesini oluşturur." VerticalAlignment="Top" Width="791" Margin="9,7,0,0" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="Black"/>
+        <Rectangle Fill="#FFCCD1E4" HorizontalAlignment="Left" Height="358" Margin="35,74,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="285" RenderTransformOrigin="3.35,0.08">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="368" Margin="41,78,0,0" TextWrapping="Wrap" Text="DropDownStyle Özelliği: combobox'ın görünümünü değiştirmek için kullanılır. Varsayılan değeri dropdown dır. Dropdown olduğu zaman TextBox ve Listbox özelliklerinden yararlanılabilir ve kullanıcı dışarıdan kontrol içerisine öğe ekleyebilir. Dropdownlist özelliği ise sadece listebox özelliğindan faydalanır. Daha önceden eklenmiş öğelere erişilenebilir. Kullanıcı veri ekleyemez. &#xD;&#xA;Items Özelliği: ComboBox'a veri eklemek için kullanılır. &#xD;&#xA;MaxDropDownItems Özelliği: açılan listede kaç adet verinin kaydırma çubuğunu kullanmadan gösterileceğini belirtir. Eğer değer verilmezse sekiz öğeden sonra kaydırma çubuğu gözükür.   Sorted Özelliği: Kontrol içerisinde yer alan öğelerin küçükten büyüğe veya a dan z ye sırlamasını gerçekleştirir.  " VerticalAlignment="Top" Width="279" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="Black"/>
+        <Rectangle Fill="#FFFE7E6D" HorizontalAlignment="Left" Height="358" Margin="336,74,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="199">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="287" Margin="340,78,0,0" TextWrapping="Wrap" Text="SelectedIndex ve SelectedItem Özelliği: SelectedIndex, bir ComboBox'ın kontrolünün içerisinde seçilen elemanın, ComboBox içerisindeki kaçıncı öğe olduğunu bilmeye ihtiyaç duyulduğu zaman kullanılır. Hiçbir öğe seçilmemişse SelectedIndex değeri -1 dir. Eğer seçilmiş ise ComboBox içerisindeki öğeler 0 dan başlayarak indeksleyecektir. SelectedItem özelliği ise selectedindex özelliğine benzer. Farkları ise SelectedItem özelliğinin ComboBox içerinde bulunan öğelerin string değerlerini vermesidir.  " VerticalAlignment="Top" Width="190" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="Black" FontSize="14"/>
+        <Rectangle Fill="#FFFE7E6D" HorizontalAlignment="Left" Height="351" Margin="550,74,0,0" RadiusY="9.5" RadiusX="9.5" VerticalAlignment="Top" Width="206">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0AC581" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="257" Margin="552,78,0,0" TextWrapping="Wrap" Text="Auto Complete (Otomatik Tamamlama) Kullanımı Auto Complete yani otomatik tamamlama; C# özellikle TextBox, ComboBox kontrollerinde, metin kutusuna bir alfabe yazdığınızda bir metni otomatik olarak tamamlamak için kullanılır. Metni en hızlı şekilde aramak ve filtrelemek için kullanılır. " VerticalAlignment="Top" Width="180" Background="{x:Null}" BorderBrush="{x:Null}" CaretBrush="{x:Null}" Foreground="Black" FontSize="14"/>
+
+    </Grid>
+</UserControl>

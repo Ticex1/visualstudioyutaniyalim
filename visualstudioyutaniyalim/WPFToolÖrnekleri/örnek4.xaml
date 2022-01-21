@@ -1,0 +1,19 @@
+<UserControl x:Class="visualstudioyutaniyalim.WPFToolÖrnekleri.örnek4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:visualstudioyutaniyalim.WPFToolÖrnekleri"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White" Margin="0,0,-212,-215">
+        <ComboBox x:Name="cmbResim" HorizontalAlignment="Left" Margin="226,125,0,0" VerticalAlignment="Top" Width="163" Height="40" SelectionChanged="cmbResim_SelectionChanged"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="255" Margin="56,215,0,0" VerticalAlignment="Top" Width="311"/>
+        <Label Content="Örnek 4 : Bu örnekte C# Windows Form ile ComboBox kontrolünden &#xD;&#xA;seçilen resmin PictureBox içinde görüntülenmesini sağlayacağız.&#xA;&#xA;                              Lütfen ComboBoxtan seçim yapınız." HorizontalAlignment="Left" Margin="6,13,0,0" VerticalAlignment="Top" FontSize="18" Height="115" Width="631"/>
+        <TextBox HorizontalAlignment="Left" Height="200" Margin="602,49,0,0" TextWrapping="Wrap" Text="Öncelikli olarak Form_Load bölümünde ComboBox içini dolduralım.&#xA;&#xA; &#xA;private void Form1_Load(object sender, EventArgs e)&#xA;        {&#xA;            cmbResim.Items.Add(&quot;Kedi 1&quot;);&#xA;            cmbResim.Items.Add(&quot;Kedi 2&quot;);&#xA;            cmbResim.Items.Add(&quot;Kedi 3&quot;);&#xA; &#xA;        }" VerticalAlignment="Top" Width="332" IsEnabled="False" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="324" Margin="498,256,0,0" TextWrapping="Wrap" Text="Şimdi de cmbResim_SelectedIndexChanged kodlarımızı oluşturalım.&#xA;&#xA; &#xA;private void cmbResim_SelectedIndexChanged(object sender, EventArgs e)&#xA;        {&#xA;            int secim = cmbResim.SelectedIndex;&#xA;            switch(secim)&#xA;            {&#xA;                case 0:&#xA;                    pictureBox1.Image = Image.FromFile(&quot;..\\..\\Resimler\\kedi.jpg&quot;);&#xA;                    break;&#xA;                case 1:&#xA;                    pictureBox1.Image = Image.FromFile(&quot;..\\..\\Resimler\\kedi2.jpg&quot;);&#xA;                    break;&#xA;                case 2:&#xA;                    pictureBox1.Image = Image.FromFile(&quot;..\\..\\Resimler\\kedi3.jpg&quot;);&#xA;                    break;&#xA; &#xA;            }&#xA;        }&#xA; " VerticalAlignment="Top" Width="495" FontWeight="Bold" IsEnabled="False"/>
+        <Label Content="Kodlar" HorizontalAlignment="Left" Margin="731,16,0,0" VerticalAlignment="Top" Width="73" FontSize="20" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>
+
