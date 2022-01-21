@@ -244,9 +244,6 @@
     <Resource Include="img\icon\visual-studio.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\icon\home-page.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="img\icon\toolbox.png" />
   </ItemGroup>
   <ItemGroup>
@@ -260,9 +257,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\icon\home2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\icon\home.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\icon\visualstudio.png" />
